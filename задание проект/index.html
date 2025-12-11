@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Real Steel - Каталог ноутбуков</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap only for product cards -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar site-navbar">
+    <div class="left">
+      <div class="logo"><span class="logo-square">■</span> <span class="site-title">Real Steel</span></div>
+    </div>
+    <div class="center">
+      <input id="search" class="search-input" type="text" placeholder="Поиск по названию..." />
+    </div>
+    <div class="right">
+      <a class="nav-link" href="register.html"><i class="fa-regular fa-user"></i> Регистрация</a>
+      <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Корзина (<span id="cart-count">0</span>)</a>
+    </div>
+  </nav>
+
+  <main class="container main-content">
+    <div class="filters-row">
+      <div class="filters-left">
+        <label>Фильтры:</label>
+        <select id="filter-brand">
+          <option value="">Все бренды</option>
+          <option>Lenovo</option>
+          <option>Asus</option>
+          <option>HP</option>
+          <option>Acer</option>
+        </select>
+      </div>
+      <div class="filters-right">
+        <button id="clear-filters" class="btn-simple">Сбросить</button>
+      </div>
+    </div>
+
+    <div id="product-list" class="row mt-4">
+      <!-- product cards injected here -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>Связаться с нами:</div>
+      <div class="socials">
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        <a href="mailto:info@realsteel.com" title="Email"><i class="fa-regular fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
